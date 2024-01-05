@@ -20,8 +20,6 @@ I have chosen **Reinforcemnet Learning techniques with Q-learning and linear app
      - [Disadvantages](#disadvantages)
   * [Future improvements](#future-improvements)
 
-## Governing Strategy Tree  
-
 ### Motivation  
 
 #### Q-Learning:
