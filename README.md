@@ -1,19 +1,18 @@
 # COMP90054 Project (Semester 2, 2023): PACMAN Capture the Flag
 
 This is a group-of-three project of the Course [COMP90054 AI Planning for Autonomy](https://handbook.unimelb.edu.au/subjects/comp90054) at the University of Melbourne @ Semester 2, 2023. The purpose of this project is to implement an autonomous agent that can play the game PACMAN Capture the Flag and compete in the UoM COMP90054-2023 Pacman competition. The rules of the game can be found at [Link](http://ai.berkeley.edu/contest.html).
-The main task is to develop an autonomous agent team to play PACMAN Capture the Flag by suitably modifying file myTeam.py (and maybe some other auxiliarly files you may implement).
+The main task is to develop an autonomous agent team to play PACMAN Capture the Flag by suitably modifying file myTeam.py (and maybe some other auxiliarly files students may implement).
 Over the course of the project, each group must try at least least 3 AI-related techniques that have been discussed in the subject or explored by team members independently. Students can try three separate agents with different techniques, combine multiple techniques into a single agent. Some candidate techniques that you may consider are:
 
-  * Search Algorithms (using general or domain-specific heuristic functions).
-  * Classical Planning (PDDL and calling a classical planner).
-  * Policy iteration or Value Iteration (Model-Based MDP).
-  * Monte Carlo Tree Search or UCT (Model-Free MDP).
-  * Reinforcement Learning – classical, approximate or deep Q-learning (Model-Free MDP).
-  * Goal Recognition techniques (to infer intentions of opponents).
-  * Game Theoretic Methods such as multi-player MCTS/reinforcement learning and backward induction.
+   * Search Algorithms (using general or domain-specific heuristic functions).
+   * Classical Planning (PDDL and calling a classical planner).
+   * Policy iteration or Value Iteration (Model-Based MDP).
+   * Monte Carlo Tree Search or UCT (Model-Free MDP).
+   * Reinforcement Learning – classical, approximate or deep Q-learning (Model-Free MDP).
+   * Goal Recognition techniques (to infer intentions of opponents).
+   * Game Theoretic Methods such as multi-player MCTS/reinforcement learning and backward induction.
 
 I have chosen **Reinforcemnet Learning techniques with Q-learning and linear approximation** to develop a team of two agents, which has made to our group's final submission thanks to its best-out-of-three performance.
-- [Governing Strategy Tree](#governing-strategy-tree)
   * [Motivation](#motivation)
   * [Application](#application)
   * [Trade-offs](#trade-offs)     
