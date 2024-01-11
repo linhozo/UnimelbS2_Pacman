@@ -7,7 +7,7 @@ Over the course of the project, each group must try at least least 3 AI-related 
    * Search Algorithms (using general or domain-specific heuristic functions).
    * Classical Planning (PDDL and calling a classical planner).
    * Policy iteration or Value Iteration (Model-Based MDP).
-   * Monte Carlo Tree Search or UCT (Model-Free MDP).
+   * Monte Carlo Tree Search (MCTS) or Upper Confidence bounds applied to Trees (UCT) (Model-Free MDP).
    * Reinforcement Learning – classical, approximate or deep Q-learning (Model-Free MDP).
    * Goal Recognition techniques (to infer intentions of opponents).
    * Game Theoretic Methods such as multi-player MCTS/reinforcement learning and backward induction.
