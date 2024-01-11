@@ -132,7 +132,7 @@ This set of weights were achieved through multiple experiments and observations 
 * High level of freedom and creativity in terms of **feature engineering**, which can significantly impact learning efficiency and performance. Agents with certain traits and characteristics can be designed with ease.
 * Linear approximators provide more **interpretable Q-value estimates**. The importance of different features can be analyzed and the agent's decision-making process can be designed with ease. Linear combinations of features can provide a reasonably accurate approximation in this AI Pacman challenge.
 * No probability model is required. States can be **generalized** and defined by features and their respective weights, therefore dependencies on layout specification of the game can be reduced greatly.
-* **Straightforward and simple implementation** in comparison with neural network-based approaches like deep Q-networks or simulation-based approaches like Monte-Carlo Tree Search
+* **Straightforward and simple implementation** in comparison with neural network-based approaches like deep Q-networks or simulation-based approaches like Monte-Carlo Tree Search (MCTS)
 
 #### *Disadvantages*
 * Linear function approximation may introduces **approximation errors** in capturing the true Q-values, especially in environments with advanced, complex opponents or layout anf nonlinear relationships in the data.
