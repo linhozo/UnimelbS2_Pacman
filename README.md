@@ -2,7 +2,7 @@
 
 This is a group-of-three project of the Course [COMP90054 AI Planning for Autonomy](https://handbook.unimelb.edu.au/subjects/comp90054) at the University of Melbourne @ Semester 2, 2023. The purpose of this project is to implement an autonomous agent that can play the game PACMAN Capture the Flag and compete in the UoM COMP90054-2023 Pacman competition. The rules of the game can be found at [Link](http://ai.berkeley.edu/contest.html).
 The main task is to develop an autonomous agent team to play PACMAN Capture the Flag by suitably modifying file myTeam.py (and maybe some other auxiliarly files students may implement).
-Over the course of the project, each group must try at least least 3 AI-related techniques that have been discussed in the subject or explored by team members independently. Students can try three separate agents with different techniques, combine multiple techniques into a single agent. Some candidate techniques that you may consider are:
+Over the course of the project, each group must try at least least 3 AI-related techniques that have been discussed in the subject or explored by team members independently. Students can try three separate agents with different techniques, combine multiple techniques into a single agent. Some candidate techniques that students may consider are:
 
    * Search Algorithms (using general or domain-specific heuristic functions).
    * Classical Planning (PDDL and calling a classical planner).
@@ -26,7 +26,7 @@ I have chosen **Reinforcemnet Learning techniques with Q-learning and linear app
 
 For a complex and dynamic environments like Pacman Capture the Flag problem, a model-free learning technique such as Q-learning that does not require prior knowledge of the game dynamics can be considered as a highly potential solution. It encourages agents to explore different actions to discover optimal strategies and continuously update their Q-values (Q(s,a)) that represent the quality of taking a specific action in a particular state, based on new observations of the rewards that they get. This further helps agents to adapt to changing game states and opponent behaviors, which is vital in this challenge, where agents need to explore the game space to locate the foods, avoid opponents, and find safe paths.
 
-#### Q-Learning with linear pproximation:
+#### Q-Learning with linear approximation:
 
 Although Q-Learning is a promising approach, using a table to store the Q-value of each state-action pair is unfeasible due to the curse of dimensionality. It requires us to maintain a table of size |A|x|S|, which is impractically large for any non-trivial problem. In this Pacman AI problem, the states s will be the game board, which is far too high-dimensional for tabular representations. Additionally, frequent visits to every reachable state and repeated actions to accurately estimate Q(s, a) are also required. As a result, if we never visit a state s, we have no estimate of Q(s, a), even if we have visited states that are very similar to s.
 
@@ -43,13 +43,15 @@ Finally, it is an off-line approach, in which the agents are trained before part
 ### Application
 
 We have created two agents, each assigned the primary role of either attacker or defender. Nevertheless, they can adapt and exhibit characteristics of their teammate's main role under specific circumstances.
-<img width="1241" alt="image" src="https://github.com/COMP90054-2023s2/a3-team_sheeesshhh/assets/93761488/29fae4bd-cb3a-4eb1-9755-2b52dfc65805">
+![image](https://github.com/linhozo/UnimelbS2_Pacman/assets/93761488/cfe86db3-68a0-42fd-ab3c-4638ddcba679)
+
 
 These characteristics, pertaining to attackers and defenders, are outlined through separate sets of features and their respective weightings. The attacker's weights are determined through a combination of training and manual adjustments, while the defender's weights are manually configured. This differentiation arises due to training time constraints, and the simpler, smaller feature set for defenders, which allows distinct weight assignments based on experimentation and observation. On the other hand, attackers have a more complex feature set, making it challenging to define their weights due to potential correlations among these features.
 
 #### Attacking Agents
 ##### Feature design
-<img width="1403" alt="image" src="https://github.com/COMP90054-2023s2/a3-team_sheeesshhh/assets/93761488/0a55cd86-b980-438e-b01a-bfb480111c6f">
+![image](https://github.com/linhozo/UnimelbS2_Pacman/assets/93761488/ecfaf05e-8727-406c-8815-8f439c2bab74)
+
 
 ##### Reward function
 <body lang=EN-GB style='tab-interval:36.0pt;word-wrap:break-word'>
