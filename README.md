@@ -37,9 +37,6 @@ Moreover, by implementing Q-Learning with linear approximation, we can convenien
 Finally, it is an off-line approach, in which the agents are trained before participating in the competition. Therefore, it does not require extensive computational resource during the games.
 
 
-
-[Back to top](#table-of-contents)
-
 ### Application
 
 We have created two agents, each assigned the primary role of either attacker or defender. Nevertheless, they can adapt and exhibit characteristics of their teammate's main role under specific circumstances.
@@ -144,7 +141,6 @@ This set of weights were achieved through multiple experiments and observations 
 * The selection of **hyperparameters** (e.g., learning rate, exploration rate, discount rate) is important, and finding the right values can be a non-trivial task.
 * The **performance of estimators are not stable** when they play against various agent teams with random layouts, which indicates that the weights assigned for features are not accurate enough or there exists problems that are not captured by the logic in feature engineering.
 
-[Back to top](#table-of-contents)
 
 ### Future improvements  
 * **Feature engineering**: New features can be added to reflect the cooperation among our agents in the games. The current version of our team has limited cooperation between the agents. More experiments with different set of features to identify which ones contribute the most to learning can be executed as well.
@@ -153,6 +149,5 @@ This set of weights were achieved through multiple experiments and observations 
 * **Reward Shaping**: Reward shaping can be used to guide the learning process.
 * **Combining multiple techniques**: more experiments with combination of MCTS and Q-learning with linear approximation can be conducted to leverage each techniques' advantages where Q-learning can provide a promising guide for MCTS for its simulation and exapnasion process.
 
-[Back to top](#table-of-contents)
 ***
 
